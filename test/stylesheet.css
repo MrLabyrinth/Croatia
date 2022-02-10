@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: arial;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 html{
@@ -88,14 +88,14 @@ html{
     .dropdown-content {
       display: none;
       position: absolute;
-      background-color: #f9f9f9;
+      background-color: rgb(203, 224, 214);
       min-width: 160px;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       z-index: 1;
     }
     
     .dropdown-content a {
-      color: black;
+      color: #262f28;
       padding: 12px 16px;
       text-decoration: none;
       display: block;
@@ -109,8 +109,7 @@ html{
     }
     
     .dropdown-content a:hover {
-      background-color: #ddd;
-      color: black;
+      color: #72936e;
     }
     
     .dropdown:hover .dropdown-content {
@@ -121,9 +120,9 @@ html{
 
 
     @media screen and (max-width: 800px) {
-      .topnav a, .dropdown .dropbtn {
+    .topnav a, .dropdown .dropbtn {
         display: none;
-      }
+    }
     .hidden {
         display: inline-block;
     }
@@ -160,7 +159,7 @@ html{
     font-weight: bold;
 }
 .header-img {
-    background-image: url('test/pictures2/homepage/croatiabg.jpg');
+    background-image: url('pictures/homepage/croatiabg.jpg');
     height: 100vh;
     background-attachment: fixed;
     background-position: center;
@@ -180,7 +179,7 @@ html{
     padding: 0%;
 }
 .paralaximg {
-    background-image: url('test/pictures2/diocletain/diocletian4.jpg');
+    background-image: url('pictures/diocletain/diocletian4.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -188,18 +187,44 @@ html{
     height: 100%;
     position: relative;
 }
-.paralaxoverlay {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    opacity: 0.6;
-    background-color: #182221;
+
+.mybox{
+    place-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    color: #406063;
+    background-color: #97cfc2;
+}
+
+.mybox-textbox {
+    font-size:calc(13px + 1vw);
+    text-align: center;
+    color: #406063;
+    padding: 10rem 5rem calc(10px + 10vw) 5rem;
+}
+
+.mybox img{
+    height: 350px;
+    width: auto;
+}
+
+.spanbox{
+    bottom: 0;
+    transform: rotateZ(90deg);
+}
+
+.spanbox a{
+    text-decoration: none;
+    font-size: 3em !important;
 }
 
 .cbox{
     place-items: center;
+    justify-content: center;
     text-align: center;
     padding: 10rem 5rem;
+    height: 100%;
     color: #4b6149;
     font-size: 1.3em;
 }
@@ -280,32 +305,103 @@ html{
   width: auto;
 }
 
-@media (max-width: 768px) {
-    .carousel-inner .carousel-item > div {
-        display: none;
-    }
-    .carousel-inner .carousel-item > div:first-child {
-        display: block;
-    }
-}
-/*===================================================================*/ 
-.carousel-item{
-    height: 100vh;
-    object-fit: cover;
+.table td, .table th{
+    border-color: #97cfc2;
+    padding: 20px 0;
 }
 
 /*===================================================================*/ 
+.boxincarousel{
+    position: absolute;
+    border-style: solid;
+    min-height: 300px;
+    min-width: 300px;
+    border-color: #b9e9de;
+    z-index: 99;
+    padding: 0;
+}
+
+.textinbox{
+    position: relative;
+    text-align: justify;
+    color: #b9e9de;
+    margin: 1rem;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .carousel-item img {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+  }
+
+  .carouseloverlay {
+    position: relative;
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.7;
+    background-color: #000000;
+}
+
+.carousel-titles{
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    padding: 4rem 4rem;
+    text-align: left;
+    font-size:calc(25px + 1.5vw);
+    width: 100vw;
+    color: #b9e9de;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.learnmore {
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    border-top: solid;
+    border-color: #b9e9de;
+    text-align: center;
+    padding: 10px;
+    z-index: 99;
+    bottom: 0;
+}
+
+.learnmore a {
+    color: #b9e9de;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    .carousel-titles{
+         text-align: center;
+    }
+}
+/*===================================================================*/ 
 .card {
-    background-color: #e3ffe0;
+    background-color: #79bbab;
+    border-style: none;
+    padding: 0;
 }
 
 .page-footer {
     font-size: 16px;
     line-height: normal;
     text-align: center;
-    text-justify: inter-word;
-    text-align: justify;
-    padding: 0 20px 10px;
+    padding: 30px 10px;
     text-decoration: none;
     background-color: #262f28;
     color: #97cfc2;
@@ -318,4 +414,3 @@ html{
     text-decoration: none;
     color: #97cfc2;
 }
-
