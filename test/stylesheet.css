@@ -160,7 +160,7 @@ html{
     font-weight: bold;
 }
 .header-img {
-    background-image: url('pictures/homepage/croatiabg.jpg');
+    background-image: url('test/pictures2/homepage/croatiabg.jpg');
     height: 100vh;
     background-attachment: fixed;
     background-position: center;
@@ -180,7 +180,7 @@ html{
     padding: 0%;
 }
 .paralaximg {
-    background-image: url('pictures/diocletain/diocletian4.jpg');
+    background-image: url('test/pictures2/diocletain/diocletian4.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -303,6 +303,8 @@ html{
     font-size: 16px;
     line-height: normal;
     text-align: center;
+    text-justify: inter-word;
+    text-align: justify;
     padding: 0 20px 10px;
     text-decoration: none;
     background-color: #262f28;
@@ -316,3 +318,4 @@ html{
     text-decoration: none;
     color: #97cfc2;
 }
+
