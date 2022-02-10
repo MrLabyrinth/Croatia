@@ -3,26 +3,74 @@
 <head>
 	<title>Tour: Istria</title>
 	<link rel="icon" href="flag.png">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+			<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
 	<link rel="stylesheet" href="stylesheet.css">
+	<script type="text/javascript" src="text/myjs.js"></script>
+	
 	
 	<style>
 	
-	.cbox {
-    place-items: center;
-    text-align: center;
-    padding: 5rem 0;
-	}
+		h3 {
+		font-size: 20px;
+		text-align: justify;
+		text-justify: inter-word;
+		}
+		
+		h4 {
+		font-size: 80px;
+		font-weight: bold;
+		color: #b9e9de;
+		}
+		
+		h5 {
+		font-size: 25px;
+		font-weight: bold;
+		}
+		
+		.cbox {
+		place-items: center;
+		text-align: center;
+		padding: 5rem 2rem;
+		width: 100%;
+		}
+		
+		.container {
+		display: inline-block;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		}
 	
-	.header-img {
-    background-image: url("istria.jpg");
-    height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-	}
+		.image-fluid{
+		max-width: 100%;
+		height: 100%;
+		border: #ffffff;
+		}
 	
-	</style>
+		.header-img {
+		background-image: url("zagreb.jpg");
+		height: 100vh;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		}
+		
+		.row-margin-05 { margin-left: 0.5rem; margin-right: 0.5em; }
+		.row-margin-10 { margin-top: 1em; margin-bottom: 4em; }
+		</style>
 	
 	
 </head>
@@ -38,7 +86,7 @@
 	<nav class="nav-main">
 		<ul>
 		    <li>
-			<a href="index-1.html" class="nav-item">
+			<a href="index.html" class="nav-item">
 				<div class="hoverbar"></div>
 				home
 			</a>
@@ -50,16 +98,16 @@
 				tours
 			</a>
 
-					<ul>
+			<div class="content nav-item:focus ~ .content">
+				<div class="menu-item:focus ~ .content">
+					<ul class="sub">
 						<li><a href="CroatiaProper.html">Croatia Proper</a></li>
 						<li><a href="Dalmatia.html">Dalmatia</a></li>
 						<li><a href="#">Istria</a></li>
 						<li><a href="Slavonia.html">Slavonia</a></li>
-
-
 					</ul>
-		    </li>
-
+			</div>
+			</div>
 		    <li>
 			<a href="flights.html" class="nav-item">
 				<div class="hoverbar"></div>
@@ -77,9 +125,8 @@
 		</ul>
 	</nav>
 
-	 <div style="border: white; margin: 0 auto; background-color: #97cfc2;">
+	<div class="cbox" style="background-color: #f1f1f1;"> 
 	<br>
-	
 		<h1 align="center">ABOUT ISTRIA</h1>
 		<br>
 		
@@ -87,13 +134,21 @@
 		
 		<br>
 	
-		<table border="5" style="margin:0 auto; background-color: #4a8577;" cellpadding="20px">
-		<th><a href="#RomanArena"><img src="arenamain.jpg" alt="Roman Arena" height="250" width="475"></a></th>
-		<th><a href="#TownOfRovinj"><img src="rovinjmain.jpg" alt="Town Of Rovinj" height="250" width="475"></a></th>
-		<th><a href="#BrijuniNationalPark"><img src="brijunimain.jpg" alt="Brijuni National Park" height="250" width="475"></a></th>
-		</table><hr><br><br>
+		<div class="cbox" style="background-color: #EBE2DC;"> 
+			<div class="row"></div>
+			<div class="col-xl-4 row-margin-10">
+		<a href="#RomanArena"><img src="arenamain.jpg" class="image-fluid rounded" alt="Roman Arena" height="250" width="475"></a></div>
 
-	<div style="border: white; margin: 0 auto; background-color: #7bb0a4;"> 
+		<div class="col-xl-4 row-margin-10">
+		<a href="#TownOfRovinj"><img src="rovinjmain.jpg" class="image-fluid rounded" alt="Town Of Rovinj" height="250" width="475"></a></div>
+
+		<div class="col-xl-4 row-margin-10">
+		<a href="#BrijuniNationalPark"><img src="brijunimain.jpg" class="image-fluid rounded" alt="Brijuni National Park" height="250" width="475"></a></div>
+
+		</div>
+		</div>
+
+		<div class="cbox" style="background-color: #e6b68e;"> 
 
 	  <h2 align="center" id="RomanArena">PULA'S ROMAN ARENA</h2>
 	  <br>
@@ -102,23 +157,26 @@
 	  
 	  <br>
 	  
-	  <table align="center">
-		<tr>
-			<th><img src="arena1.jpg" alt="1" height="250" width="475"></th>
-			<th><img src="arena2.jpg" alt="2" height="250" width="475"></th>
-			<th><img src="arena3.jpg" alt="3" height="250" width="475"></th>
-		</tr>
+	  <div class="cbox" style="background-color: #EBE2DC;"> 
+		<div class="row ">
+			<div class="col-xl-4 row-margin-10">
+			<img src="arena1.jpg" class="image-fluid rounded"alt="1" height="250" width="475"></div>
+			<div class="col-xl-4 row-margin-10">
+			<img src="arena2.jpg" class="image-fluid rounded" alt="2" height="250" width="475"></div>
+			<div class="col-xl-4 row-margin-10">
+			<img src="arena3.jpg" class="image-fluid rounded" alt="3" height="250" width="475"></div>
+
+			<div class="col-xl-4 row-margin-10">
+			<img src="arena4.jpg" class="image-fluid rounded" alt="4" height="250" width="475"></div>
+			<div class="col-xl-4 row-margin-10">
+			<img src="arena5.jpg" class="image-fluid rounded" alt="5" height="250" width="475"></div>
+			<div class="col-xl-4 row-margin-10">
+			<img src="arena6.jpg" class="image-fluid rounded" alt="6" height="250" width="475"></div>
+		</div>
+	</div>
 		
-		<tr>
-			<th><img src="arena4.jpg" alt="4" height="250" width="475"></th>
-			<th><img src="arena5.jpg" alt="5" height="250" width="475"></th>
-			<th><img src="arena6.jpg" alt="6" height="250" width="475"></th>
-		</tr>
-	  </table><hr>
-		
-	  <br>
 	  
-	<div style="border: white; margin: 0 auto; background-color: #4ca691;"> 
+	<div class="cbox" style="background-color: #e6b68e;">  
 	  
 	  	  <h2 align="center" id="TownOfRovinj">TOWN OF ROVINJ</h2>
 	  <br>
@@ -127,23 +185,25 @@
 	  
 	  <br>
 	  
-	  <table align="center">
-		<tr>
-			<th><img src="rovinj1.jpg" alt="1" height="250" width="475"></th>
-			<th><img src="rovinj2.jpg" alt="2" height="250" width="475"></th>
-			<th><img src="rovinj3.jpg" alt="3" height="250" width="475"></th>
-		</tr>
-		
-		<tr>
-			<th><img src="rovinj4.jpg" alt="4" height="250" width="475"></th>
-			<th><img src="rovinj5.jpg" alt="5" height="250" width="475"></th>
-			<th><img src="rovinj6.jpg" alt="6" height="250" width="475"></th>
-		</tr>
-	  </table>
-		
-	  <br>
+	  <div class="cbox" style="background-color: #EBE2DC ;"> 
+		<div class="row ">
+			<div class="col-xl-4 row-margin-10">
+			<img src="rovinj1.jpg" class="image-fluid rounded" alt="1" height="250" width="475"></div>
+			<div class="col-xl-4 row-margin-10">
+			<img src="rovinj2.jpg" class="image-fluid rounded" alt="2" height="250" width="475"></div>
+			<div class="col-xl-4 row-margin-10">
+			<img src="rovinj3.jpg" class="image-fluid rounded" alt="3" height="250" width="475"></div>
 
-	<div style="border: white; margin: 0 auto; background-color: #33967f;"> 
+			<div class="col-xl-4 row-margin-10">
+			<img src="rovinj4.jpg" class="image-fluid rounded" alt="4" height="250" width="475"></div>
+			<div class="col-xl-4 row-margin-10">
+			<img src="rovinj5.jpg" class="image-fluid rounded" alt="5" height="250" width="475"></div>
+			<div class="col-xl-4 row-margin-10">
+			<img src="rovinj6.jpg" class="image-fluid rounded" alt="6" height="250" width="475"></div>
+		</div>
+	</div>
+
+	<div class="cbox" style="background-color: #e6b68e;"> 
 	  
 	  	  <h2 align="center" id="BrijuniNationalPark">BRIJUNI NATIONAL PARK</h2>
 	  <br>
@@ -152,23 +212,42 @@
 	  
 	  <br>
 	  
-	  <table align="center">
-		<tr>
-			<th><img src="brijuni1.jpg" alt="1" height="250" width="475"></th>
-			<th><img src="brijuni2.jpg" alt="2" height="250" width="475"></th>
-			<th><img src="brijuni3.jpg" alt="3" height="250" width="475"></th>
-		</tr>
-		
-		<tr>
-			<th><img src="brijuni4.jpg" alt="4" height="250" width="475"></th>
-			<th><img src="brijuni5.jpg" alt="5" height="250" width="475"></th>
-			<th><img src="brijuni6.jpg" alt="6" height="250" width="475"></th>
-		</tr>
-	  </table>
-		
-	  <br>
+	  <div class="cbox" style="background-color: #EBE2DC;"> 
+		<div class="row">
+			<div class="col-xl-4 row-margin-10">
+			<img src="brijuni1.jpg" class="image-fluid rounded" alt="1" height="250" width="475"></div>
+			<div class="col-xl-4 row-margin-10">
+			<img src="brijuni2.jpg" class="image-fluid rounded" alt="2" height="250" width="475"></div>
+			<div class="col-xl-4 row-margin-10">
+			<img src="brijuni3.jpg" class="image-fluid rounded" alt="3" height="250" width="475"></div>
 
-	</div>
+			<div class="col-xl-4 row-margin-10">
+			<img src="brijuni4.jpg" class="image-fluid rounded" alt="4" height="250" width="475"></div>
+			<div class="col-xl-4 row-margin-10">
+			<img src="brijuni5.jpg" class="image-fluid rounded" alt="5" height="250" width="475"></div>
+			<div class="col-xl-4 row-margin-10">
+			<img src="brijuni6.jpg" class="image-fluid rounded" alt="6" height="250" width="475"></div>
+			<br>
+
+		</div>
+		</div>
+		<footer class="page-footer">
+			<p>
+				<b>Creators of the page:</b>
+			</p>
+			<p>
+				<small><a href="https://sites.google.com/view/cismonteloyola/home" target="_blank">Charles Monteloyola</a></small>
+			</p>
+			  <p>
+				<small><a href="https://sites.google.com/view/jamesfrancisdeocampo" target="_blank">James De Ocampo</a></small>
+			</p>
+			<p>
+				<small><a href="https://sites.google.com/view/ambevangelista/home" target="_blank">Miguel Evangelista</a></small>
+			</p>
+			<p>
+				<small><a href="https://sites.google.com/view/katrinasoo/home?authuser=1" target="_blank">Katrina Soo</a></small>
+			</p>
+		  </footer>
 
 </body>
 </html>
