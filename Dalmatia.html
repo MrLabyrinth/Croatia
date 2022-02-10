@@ -3,168 +3,247 @@
 <head>
 	<title>Tour: Dalmatia</title>
 	<link rel="icon" href="flag.png">
+	
+	<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+		        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
 	<link rel="stylesheet" href="stylesheet.css">
+	
+	<style>
+	
+	h3 {
+	font-size: 20px;
+	text-align: justify;
+	text-justify: inter-word;
+	}
+	
+	h4 {
+	font-size: 80px;
+	font-weight: bold;
+	color: #b9e9de;
+	}
+	
+	h5 {
+	font-size: 25px;
+	font-weight: bold;
+	}
+	
+	.cbox {
+    place-items: center;
+    text-align: center;
+    padding: 5rem 2rem;
+	width: 100%;
+	}
+	
+	.container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+	height: 100%;
+	}
+
+	.image-fluid{
+    max-width: 100%;
+    height: 100%;
+	border: #ffffff;
+    }
+
+	.header-img {
+    background-image: url("zagreb.jpg");
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	}
+	
+	.row-margin-05 { margin-left: 0.5rem; margin-right: 0.5em; }
+	.row-margin-10 { margin-top: 1em; margin-bottom: 4em; }
+	
+	</style>
+	
 </head>
 
 <body>
 	<div class="overlay"></div>
 	<div class="header-img">
 		<header> 
-			<a href="#"><h1>croatia</h1></a>
+			<h4>Dalmatia</h4>
 		</header>
 	</div>
 	<nav class="nav-main">
 		<ul>
 		    <li>
-			<a href="#" class="nav-item">
+			<a href="index-1.html" class="nav-item">
 				<div class="hoverbar"></div>
 				home
 			</a>
 		    </li>
 
 		    <li>
-			<a href="javascript:;" class="nav-item">
+			<a href="#" class="nav-item">
 				<div class="hoverbar"></div>
 				tours
 			</a>
-			<div class="content">
-				<div class="sub">
-					<ul>
-						<li><a href="#">Croatia Proper</a></li>
+			
+			<div class="content nav-item:focus ~ .content">
+				<div class="menu-item:focus ~ .content">
+					<ul class="sub">
+						<li><a href="CroatiaProper.html">Croatia Proper</a></li>
 						<li><a href="#">Dalmatia</a></li>
-						<li><a href="#">Istria</a></li>
-						<li><a href="#">Slavonia</a></li>
-
-
+						<li><a href="Istria.html">Istria</a></li>
+						<li><a href="Slavonia.html">Slavonia</a></li>
 					</ul>
-				</div>
 			</div>
-		    </li>
+			</div>
 
+			</li>
+			
 		    <li>
-			<a href="#" class="nav-item">
+			<a href="flights.html" class="nav-item">
 				<div class="hoverbar"></div>
-				flights
+				Flights
 			</a>
 		    </li>
 
 		    <li>
-			<a href="#" class="nav-item">
+			<a href="Contact_Us.html" class="nav-item">
 				<div class="hoverbar"></div>
 				Contact us
 			</a>
 		    </li>
 
-		    <li>
-			<a href="javascript:;" class="menu-item">
-				<div class="hoverbar"></div>
-				<img src="menu2.png" class="menu-icon">
-			</a>
-			<div class="content">
-				<div class="sub">
-					<ul>
-						<li><a href="#">home</a></li>
-						<li><a href="#">classes</a></li>
-						<li><a href="#">activities</a></li>
-						<li><a href="#">contact</a></li>
-					</ul>
-				</div>
-			</div>
-		    </li>
+		  
 		</ul>
 	</nav>
 
-	 <div style="border: white; margin: 0 auto; background-color: #97cfc2;">
+	 <div class="cbox" style="background-color: #f1f1f1;"> 
 	<br>
 	
-		<h1 align="center">ABOUT DALMATIA</h1><hr>
+		<h1 align="center">ABOUT DALMATIA</h1>
 		<br>
 		
-		<h3>Dalmatia is a region on the east shore of the Adriatic Sea, a narrow belt stretching from the island of Rab in the north to the Bay of Kotor in the south. The Dalmatian Hinterland ranges in width from fifty kilometres in the north, to just a few kilometres in the south, and it is mostly covered by the rugged Dinaric Alps. Seventy-nine islands (and about 500 islets) run parallel to the coast, the largest (in Dalmatia) being Brač, Pag, and Hvar. The largest city is Split, followed by Zadar, Šibenik, and Dubrovnik.</h3><hr>
+		<h3>Dalmatia is a region on the east shore of the Adriatic Sea, a narrow belt stretching from the island of Rab in the north to the Bay of Kotor in the south. The Dalmatian Hinterland ranges in width from fifty kilometres in the north, to just a few kilometres in the south, and it is mostly covered by the rugged Dinaric Alps. Seventy-nine islands (and about 500 islets) run parallel to the coast, the largest (in Dalmatia) being Brač, Pag, and Hvar. The largest city is Split, followed by Zadar, Šibenik, and Dubrovnik.</h3>
 		
-		<br>
+		<br><br>
 	
-		<table border="5" style="margin:0 auto; background-color: #4a8577;" cellpadding="20px">
-		<th><a href="#WallsOfDubrovnik"><img src="dubrovnikmain.jpg" alt="Walls Of Dubrovnik" height="250" width="475"></a></th>
-		<th><a href="#DiocletiansPalace"><img src="diocletianmain.jpg" alt="Diocletian's Palace" height="250" width="475"></a></th>
-		<th><a href="#KortaniNationalPark"><img src="kortanimain.jpg" alt="Kortani National Park" height="250" width="475"></a></th>
-		</table><hr><br><br>
+	<div class="cbox" style="background-color: #EBE2DC;"> 
+		<div class="row">
+		
+		<div class="col-xl-4 row-margin-10">
+		<h5>Walls of Dubrovnik</h5>
+		<a href="#WallsOfDubrovnik"><img src="dubrovnikmain.jpg" class="image-fluid rounded" alt="Walls Of Dubrovnik" height="250" width="475"></a>
+		</div>
+		
+		<div class="col-xl-4 row-margin-10">
+		<h5>Diocletian's Palace</h5>
+		<a href="#DiocletiansPalace"><img src="diocletianmain.jpg" class="image-fluid rounded" alt="Diocletian's Palace" height="250" width="475"></a>
+		</div>
+		
+		<div class="col-xl-4 row-margin-10">
+		<h5>Kortani National Park</h5>
+		<a href="#KortaniNationalPark"><img src="kortanimain.jpg" class="image-fluid rounded" alt="Kortani National Park" height="250" width="475"></a>
+		</div>
+		
+		</div>
+	</div>
+	
+	
+	<div class="cbox" style="background-color: #e6b68e;"> 
 
-	<div style="border: white; margin: 0 auto; background-color: #7bb0a4;"> 
-
-	  <h2 align="center" id="WallsOfDubrovnik">WALLS OF DUBROVNIK</h2><hr>
+	  <h2 align="center" id="WallsOfDubrovnik">WALLS OF DUBROVNIK</h2>
 	  <br>
 	  
 	  <p>The Walls of Dubrovnik are a series of defensive stone walls surrounding the city of Dubrovnik in southern Croatia. With numerous additions and modifications throughout their history, they have been considered to be amongst the great fortification systems of the Middle Ages, as they were never breached by a hostile army during this time period.</p>
 	  
 	  <br>
 	  
-	  <table align="center">
-		<tr>
-			<th><img src="dubrovnik1.jpg" alt="1" height="250" width="475"></th>
-			<th><img src="dubrovnik2.jpg" alt="2" height="250" width="475"></th>
-			<th><img src="dubrovnik3.jpg" alt="3" height="250" width="475"></th>
-		</tr>
+	  <div class="cbox" style="background-color: #EBE2DC;"> 
+		<div class="row ">
 		
-		<tr>
-			<th><img src="dubrovnik4.jpg" alt="4" height="250" width="475"></th>
-			<th><img src="dubrovnik5.jpg" alt="5" height="250" width="475"></th>
-			<th><img src="dubrovnik6.jpg" alt="6" height="250" width="475"></th>
-		</tr>
-	  </table><hr>
+			<div class="col-xl-4 row-margin-10">
+			<img src="dubrovnik1.jpg" class="image-fluid rounded" alt="1" height="250" width="475"></div>
+			<div class="col-xl-4 row-margin-10">
+			<img src="dubrovnik2.jpg" class="image-fluid rounded" alt="2" height="250" width="475"></div>
+			<div class="col-xl-4 row-margin-10">
+			<img src="dubrovnik3.jpg" class="image-fluid rounded" alt="3" height="250" width="475"></div>
 		
-	  <br>
+			<div class="col-xl-4 row-margin-10">
+			<img src="dubrovnik4.jpg" class="image-fluid rounded" alt="4" height="250" width="475"></div>
+			<div class="col-xl-4 row-margin-10">
+			<img src="dubrovnik5.jpg" class="image-fluid rounded" alt="5" height="250" width="475"></div>
+			<div class="col-xl-4 row-margin-10">
+			<img src="dubrovnik6.jpg" class="image-fluid rounded" alt="6" height="250" width="475"></div>
+		
+		</div>
+	</div>
 	  
-	<div style="border: white; margin: 0 auto; background-color: #4ca691;"> 
+	<div class="cbox" style="background-color: #e6b68e;"> 
 	  
-	  	  <h2 align="center" id="DiocletiansPalace">DIOCLETIAN'S PALACE</h2><hr>
+	  	  <h2 align="center" id="DiocletiansPalace">DIOCLETIAN'S PALACE</h2>
 	  <br>
 		
 	  <p>Diocletian's Palace is an ancient palace built for the Roman emperor Diocletian at the turn of the fourth century AD, which today forms about half the old town of Split, Croatia. While it is referred to as a "palace" because of its intended use as the retirement residence of Diocletian, the term can be misleading as the structure is massive and more resembles a large fortress: about half of it was for Diocletian's personal use, and the rest housed the military garrison.</p>
 	  
 	  <br>
 	  
-	  <table align="center">
-		<tr>
-			<th><img src="diocletian1.jpg" alt="1" height="250" width="475"></th>
-			<th><img src="diocletian2.jpg" alt="2" height="250" width="475"></th>
-			<th><img src="diocletian3.jpg" alt="3" height="250" width="475"></th>
-		</tr>
+	  <div class="cbox" style="background-color: #EBE2DC ;"> 
+	  <div class="row ">
+			
+			<div class="col-xl-4 row-margin-10">
+			<img src="diocletian1.jpg" class="image-fluid rounded" alt="1" height="250" width="475"></div>
+			<div class="col-xl-4 row-margin-10">
+			<img src="diocletian2.jpg" class="image-fluid rounded" alt="2" height="250" width="475"></div>
+			<div class="col-xl-4 row-margin-10">
+			<img src="diocletian3.jpg" class="image-fluid rounded" alt="3" height="250" width="475"></div>
 		
-		<tr>
-			<th><img src="diocletian4.jpg" alt="4" height="250" width="475"></th>
-			<th><img src="diocletian5.jpg" alt="5" height="250" width="475"></th>
-			<th><img src="diocletian6.jpg" alt="6" height="250" width="475"></th>
-		</tr>
-	  </table><hr>
-		
-	  <br>
+			<div class="col-xl-4 row-margin-10">
+			<img src="diocletian4.jpg" class="image-fluid rounded" alt="4" height="250" width="475"></div>
+			<div class="col-xl-4 row-margin-10">
+			<img src="diocletian5.jpg" class="image-fluid rounded" alt="5" height="250" width="475"></div>
+			<div class="col-xl-4 row-margin-10">
+			<img src="diocletian6.jpg" class="image-fluid rounded" alt="6" height="250" width="475"></div>
 
-	<div style="border: white; margin: 0 auto; background-color: #33967f;"> 
+		</div>
+	</div>
+	
+	<div class="cbox" style="background-color: #e6b68e;">  
 	  
-	  	  <h2 align="center" id="KortaniNationalPark">KORTANI NATIONAL PARK</h2><hr>
+	  	  <h2 align="center" id="KortaniNationalPark">KORTANI NATIONAL PARK</h2>
 	  <br>
 		
 	  <p>Spreading over an area of some 320 square kilometers-it's 35 kilometers long and 13 kilometers wide-the Kornati archipelago encompasses 89 scattered islets, big and small. Rocky and arid with little fertile soil, the islets are practically uninhabited, though there are some very basic stone cottages dotted here and there. Originally built as one-room shelters by local fishermen and shepherds, they're now often used as holiday retreats or seasonal seafood restaurants.</p>
 	  
 	  <br>
 	  
-	  <table align="center">
-		<tr>
-			<th><img src="kortani1.jpg" alt="1" height="250" width="475"></th>
-			<th><img src="kortani2.jpg" alt="2" height="250" width="475"></th>
-			<th><img src="kortani3.jpg" alt="3" height="250" width="475"></th>
-		</tr>
+	  <div class="cbox" style="background-color: #EBE2DC;"> 
+		<div class="row">
+			
+			<div class="col-xl-4 row-margin-10">
+			<img src="kortani1.jpg" class="image-fluid rounded" alt="1" height="250" width="475"></div>
+			<div class="col-xl-4 row-margin-10">
+			<img src="kortani2.jpg" class="image-fluid rounded" alt="2" height="250" width="475"></div>
+			<div class="col-xl-4 row-margin-10">
+			<img src="kortani3.jpg" class="image-fluid rounded" alt="3" height="250" width="475"></div>
 		
-		<tr>
-			<th><img src="kortani4.jpg" alt="4" height="250" width="475"></th>
-			<th><img src="kortani5.jpg" alt="5" height="250" width="475"></th>
-			<th><img src="kortani6.jpg" alt="6" height="250" width="475"></th>
-		</tr>
-	  </table><hr>
+			<div class="col-xl-4 row-margin-10">
+			<img src="kortani4.jpg" class="image-fluid rounded" alt="4" height="250" width="475"></div>
+			<div class="col-xl-4 row-margin-10">
+			<img src="kortani5.jpg" class="image-fluid rounded" alt="5" height="250" width="475"></div>
+			<div class="col-xl-4 row-margin-10">
+			<img src="kortani6.jpg" class="image-fluid rounded" alt="6" height="250" width="475"></div>
 		
 	  <br>
-
+	  
 	</div>
 
 </body>
