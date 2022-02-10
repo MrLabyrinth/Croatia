@@ -21,6 +21,12 @@
 
 	
 	<style>
+
+	p {
+	font-size: 20px;
+	text-align: justify;
+	text-justify: inter-word;
+	}
 	
 	h3 {
 	font-size: 20px;
@@ -60,7 +66,7 @@
     }
 
 	.header-img {
-    background-image: url("zagreb.jpg");
+    background-image: url("test/slavonia.jpg");
     height: 100vh;
     background-attachment: fixed;
     background-position: center;
@@ -78,57 +84,39 @@
 </head>
 
 <body>
-		
 	<div class="overlay"></div>
 	<div class="header-img">
-		<header> 
+		<div class="topbox"> 
 			<h4>Slavonia</h4>
-		</header>
+		</div>
 	</div>
-	<nav class="nav-main">
-		<ul>
-		    <li>
-			<a href="index.html" class="nav-item">
-				<div class="hoverbar"></div>
-				home
-			</a>
-		    </li>
 
-		    <li>
-			<a href="#" class="nav-item">
-				<div class="hoverbar"></div>
-				tours
-			</a>
-			<div class="content nav-item:focus ~ .content">
-				<div class="menu-item:focus ~ .content">
-					<ul class="sub">
-						<li><a href="#">Croatia Proper</a></li>
-						<li><a href="Dalmatia.html">Dalmatia</a></li>
-						<li><a href="Istria.html">Istria</a></li>
-						<li><a href="Slavonia.html">Slavonia</a></li>
-					</ul>
-			</div>
-			</div>
-		    </li>
+	<div class="topnav" id="myTopnav">
 
-		    <li>
-			<a href="flights.html" class="nav-item">
-				<div class="hoverbar"></div>
-				flights
-			</a>
-		    </li>
-
-		    <li>
-			<a href="Contact_us.html" class="nav-item">
-				<div class="hoverbar"></div>
-				Contact us
-			</a>
-		    </li>
-
-		   
-		</ul>
-	</nav>
-
+		<a href="index.html">Home</a>
+		<div class="dropdown">
+		  <button class="dropbtn">tours</button>
+		  <div class="dropdown-content">
+			<a href="CroatiaProper.html">Croatia Proper</a>
+			<a href="Dalmatia.html">Dalmatia</a>
+			<a href="Istria.html">Istria</a>
+			<a href="Slavonia.html">Slavonia</a>
+		  </div>
+		</div> 
+		<a href="flights.html">flights</a>
+		<a href="Contact_us.html">contact us</a>
+		
+		<div class="hidden">
+			<button class="hiddenbtn">&#9776;</button>
+			<div class="hiddencontent">
+				<a href="CroatiaProper.html">Home</a>
+				<a href="Dalmatia.html">Tours</a>
+				<a href="Istria.html">Flights</a>
+				<a href="#">Contact Us</a>
+			  </div>
+		</div>
+		
+	  </div>
 		<div class="cbox" style="background-color: #f1f1f1;"> 
 	<br>
 	
@@ -143,13 +131,13 @@
 		<div class="row">
 
 		<div class="col-xl-4 row-margin-10">
-		<a href="#TownOfOsijek"><img src="osijekmain.jpg" class="image-fluid rounded" alt="Town Of Osijek" height="250" width="475"></a></div>
+		<a href="#TownOfOsijek"><img src="test/pictures2/osijek/osijekmain.jpg" class="image-fluid rounded" alt="Town Of Osijek" height="250" width="475"></a></div>
 
 		<div class="col-xl-4 row-margin-10">
-		<a href="#KopackiRit"><img src="kopackimain.jpg" class="image-fluid rounded" alt="Kopacki Rit" height="250" width="475"></a></div>
+		<a href="#KopackiRit"><img src="test/pictures2/kopacki/kopackimain.jpg" class="image-fluid rounded" alt="Kopacki Rit" height="250" width="475"></a></div>
 		
 		<div class="col-xl-4 row-margin-10">
-		<a href="#VukovarMunicipalMuseum"><img src="vukovarmain.jpg" class="image-fluid rounded" alt="Vukovar Municipal Museum" height="250" width="475"></a></div>
+		<a href="#VukovarMunicipalMuseum"><img src="test/pictures3/vukovar/vukovarmain.jpg" class="image-fluid rounded" alt="Vukovar Municipal Museum" height="250" width="475"></a></div>
 	
 		</div>
 	</div>
@@ -167,18 +155,18 @@
 		<div class="row ">
 			
 			<div class="col-xl-4 row-margin-10">
-			<img src="osijek1.jpg" class="image-fluid rounded" alt="1" height="250" width="475"></div>
+			<img src="test/pictures2/osijek/osijek1.jpg" class="image-fluid rounded" alt="1" height="250" width="475"></div>
 			<div class="col-xl-4 row-margin-10">
-			<img src="osijek2.jpg" class="image-fluid rounded" alt="2" height="250" width="475">
+			<img src="test/pictures2/osijek/osijek2.jpg" class="image-fluid rounded" alt="2" height="250" width="475"></div>
 			<div class="col-xl-4 row-margin-10">
-			<img src="osijek3.jpg" class="image-fluid rounded" alt="3" height="250" width="475">
+			<img src="test/pictures2/osijek/osijek3.jpg" class="image-fluid rounded" alt="3" height="250" width="475"></div>
 				
 			<div class="col-xl-4 row-margin-10">
-			<img src="osijek4.jpg" class="image-fluid rounded" alt="4" height="250" width="475"></div>
+			<img src="test/pictures2/osijek/osijek4.jpg" class="image-fluid rounded" alt="4" height="250" width="475"></div>
 			<div class="col-xl-4 row-margin-10">
-			<img src="osijek5.jpg" class="image-fluid rounded" alt="5" height="250" width="475"></div>
+			<img src="test/pictures2/osijek/osijek5.jpg" class="image-fluid rounded" alt="5" height="250" width="475"></div>
 			<div class="col-xl-4 row-margin-10">
-			<img src="osijek6.jpg" class="image-fluid rounded" alt="6" height="250" width="475"></div>
+			<img src="test/pictures2/osijek/osijek6.jpg" class="image-fluid rounded" alt="6" height="250" width="475"></div>
 
 		</div>
 	</div>
@@ -192,25 +180,29 @@
 	  <p>Kopački Rit is a nature park in eastern Croatia in the municipalities of Bilje and Kneževi Vinogradi. It is located northwest of the confluence of the Drava and the Danube, situated at the border with Serbia. It comprises many backwaters and ponds along the Danube. It is one of the most important, largest and most attractive preserved intact wetlands in Europe.</p>
 	  
 	  <br>
+	  <div class="cbox" style="background-color: #EBE2DC;"> 
+		<div class="row ">
 	  
 	 		<div class="col-xl-4 row-margin-10">
-			<img src="kopacki1.jpg" class="image-fluid rounded" alt="1" height="250" width="475"></div>
+			<img src="test/pictures2/kopacki/kopacki1.jpg" class="image-fluid rounded" alt="1" height="250" width="475"></div>
 			<div class="col-xl-4 row-margin-10">
-			<img src="kopacki2.jpg" class="image-fluid rounded" alt="2" height="250" width="475"></div>
+			<img src="test/pictures2/kopacki/kopacki2.jpg" class="image-fluid rounded" alt="2" height="250" width="475"></div>
 			<div class="col-xl-4 row-margin-10">
-			<img src="kopacki3.jpg" class="image-fluid rounded" alt="3" height="250" width="475"></div>
+			<img src="test/pictures2/kopacki/kopacki3.jpg" class="image-fluid rounded" alt="3" height="250" width="475"></div>
 		
 			<div class="col-xl-4 row-margin-10">
-			<img src="kopacki4.jpg" class="image-fluid rounded" alt="4" height="250" width="475"></div>
+			<img src="test/pictures2/kopacki/kopacki4.jpg" class="image-fluid rounded" alt="4" height="250" width="475"></div>
 			<div class="col-xl-4 row-margin-10">
-			<img src="kopacki5.jpg"  class="image-fluid rounded"alt="5" height="250" width="475"></div>
+			<img src="test/pictures2/kopacki/kopacki5.jpg"  class="image-fluid rounded"alt="5" height="250" width="475"></div>
 			<div class="col-xl-4 row-margin-10">
-			<img src="kopacki6.jpg"  class="image-fluid rounded"alt="6" height="250" width="475"></div>
+			<img src="test/pictures2/kopacki/kopacki6.jpg"  class="image-fluid rounded"alt="6" height="250" width="475"></div>
 	
 		
 	  <br>
+	  </div>
+	  </div>
 
-	<div style="border: white; margin: 0 auto; background-color: #33967f;"> 
+	  <div class="cbox" style="background-color: #e6b68e;">
 	  
 	  	  <h2 align="center" id="VukovarMunicipalMuseum">VUKOVAR MUNICIPAL MUSEUM</h2><hr>
 	  <br>
@@ -223,18 +215,18 @@
 		<div class="row ">
 			
 			<div class="col-xl-4 row-margin-10">
-			<img src="vukovar1.jpg" class="image-fluid rounded" alt="1" height="250" width="475"></div>
+			<img src="test/pictures3/vukovar/vukovar1.jpg" class="image-fluid rounded" alt="1" height="250" width="475"></div>
 			<div class="col-xl-4 row-margin-10">
-			<img src="vukovar2.jpg" class="image-fluid rounded" alt="2" height="250" width="475"></div>
+			<img src="test/pictures3/vukovar/vukovar2.jpg" class="image-fluid rounded" alt="2" height="250" width="475"></div>
 			<div class="col-xl-4 row-margin-10">
-			<img src="vukovar3.jpg" class="image-fluid rounded" alt="3" height="250" width="475"></div>
+			<img src="test/pictures3/vukovar/vukovar3.jpg" class="image-fluid rounded" alt="3" height="250" width="475"></div>
 			
 			<div class="col-xl-4 row-margin-10">
-			<img src="vukovar4.jpg" class="image-fluid rounded" alt="4" height="250" width="475"></div>
+			<img src="test/pictures3/vukovar/vukovar4.jpg" class="image-fluid rounded" alt="4" height="250" width="475"></div>
 			<div class="col-xl-4 row-margin-10">
-			<img src="vukovar5.jpg" class="image-fluid rounded" alt="5" height="250" width="475"></div>
+			<img src="test/pictures3/vukovar/vukovar5.jpg" class="image-fluid rounded" alt="5" height="250" width="475"></div>
 			<div class="col-xl-4 row-margin-10">
-			<img src="vukovar6.jpg" class="image-fluid rounded" alt="6" height="250" width="475"></div>
+			<img src="test/pictures3/vukovar/vukovar6.jpg" class="image-fluid rounded" alt="6" height="250" width="475"></div>
 	
 			</div>
 		</div>
