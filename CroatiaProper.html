@@ -77,55 +77,37 @@
 <body>
 	<div class="overlay"></div>
 	<div class="header-img">
-		<header>
-			<h4>Croatia Proper</h4>
-		</header>
+		<div class="topbox"> 
+			Croatia Proper
+		</div>
 	</div>
-	<nav class="nav-main">
-		<ul>
-		    <li>
-			<a href="index.html" class="nav-item">
-				<div class="hoverbar"></div>
-				Home
-			</a>
-		    </li>
 
-		    <li>
-			<a href="#Tours" class="nav-item ">
-				<div class="hoverbar"></div>
-				Tours
-			</a>
-			
-			<div class="content nav-item:focus ~ .content">
-				<div class="menu-item:focus ~ .content">
-					<ul class="sub">
-						<li><a href="#">Croatia Proper</a></li>
-						<li><a href="Dalmatia.html">Dalmatia</a></li>
-						<li><a href="Istria.html">Istria</a></li>
-						<li><a href="Slavonia.html">Slavonia</a></li>
-					</ul>
-			</div>
-			</div>
-	
-		    </li>
+	<div class="topnav" id="myTopnav">
 
-		    <li>
-			<a href="flights.html" class="nav-item">
-				<div class="hoverbar"></div>
-				Flights
-			</a>
-		    </li>
-
-		    <li>
-			<a href="Contact_us.html" class="nav-item">
-				<div class="hoverbar"></div>
-				Contact us
-			</a>
-		    </li>
-
-		    
-		</ul>
-	</nav>
+		<a href="index.html">Home</a>
+		<div class="dropdown">
+		  <button class="dropbtn">tours</button>
+		  <div class="dropdown-content">
+			<a href="#">Croatia Proper</a>
+			<a href="Dalmatia.html">Dalmatia</a>
+			<a href="Istria.html">Istria</a>
+			<a href="Slavonia.html">Slavonia</a>
+		  </div>
+		</div> 
+		<a href="flights.html">flights</a>
+		<a href="Contact_us.html">contact us</a>
+		
+		<div class="hidden">
+			<button class="hiddenbtn">&#9776;</button>
+			<div class="hiddencontent">
+				<a href="CroatiaProper.html">Home</a>
+				<a href="Dalmatia.html">Tours</a>
+				<a href="Istria.html">Flights</a>
+				<a href="Slavonia.html">Contact Us</a>
+			  </div>
+		</div>
+		
+	  </div>
 
 	 <div class="cbox" style="background-color: #f1f1f1;"> 
 	<br>
