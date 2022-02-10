@@ -1,22 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Home</title>
+	<title>Flights</title>
 	<link rel="icon" href="test/icons/flag.png">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-   
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-			<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="../../js/ios-orientationchange-fix.min.js"></script>
 	<link rel="stylesheet" href="test/stylesheet.css">
-	<script type="text/javascript" src="test/myjs.js"></script>
+	<script type="test/javascript" src="text/myjs.js"></script>
 	<style>
 
 h3 {
@@ -128,35 +121,34 @@ h3 {
 
     <div class="cbox" style="background-color: #97cfc2;"> 
 		<h2>Personal Information</h2>
-        <form style="font-family: courier;"><br>
-            <fieldset><br>
+        <form style="font-family: courier;">
             <label for="last">Last Name:</label>
             <input type="text" id="last" name="last">
             <label for="first">First Name:</label>
             <input type="text" id="first" name="first">
-            <br><br>
+            <br>
             <label for="street">Street Address:</label>
             <input type="text" id="street" name="street" size="30" maxlength="30">
             <label for="city">City:</label>
             <input type="text" id="city" name="city" size="20" maxlength="20">
-            <br><br>
+            <br>
             <label for="state">State:</label>
             <input type="text" id="state" name="state" size="15" maxlength="20">
             <label for="zip">Zip Code:</label>
             <input type="text" id="zip" name="zip" size="5" maxlength="5">
-            <br><br>
+            <br>
             <label for="email">Email Address:</label>
             <input type="email" id="email" name="email" size="30" maxlength="60">
             <label for="cnumber">Contact Number:</label>
             <input type="number" id="cnumber" name="cnumber" size="11" maxlength="11">
-            <br><br></fieldset>
+            <br>
             </form>
             </div>
 			
             <div class="cbox" style="background-color: #72936e;"> 
             <h2>Travel Details</h2>
-            <form style="font-family: courier;"><br>
-                <fieldset><br>
+            <form style="font-family: courier;">
+                <br>
                 <label for="destination">Destination:</label>
                 <select name="destination">
                     <option>Croatia Proper</option>
@@ -168,7 +160,7 @@ h3 {
                 <input type="date" id="checkin" name="checkin">
                 <label for="checkout">Check-out Date:</label>
                 <input type="date" id="checkout" name="checkout">
-                <br><br>
+                <br>
                 <label for="CCT">Credit Card Type:</label>
                 <select name="Creditcardtype">
                     <option>Visa</option>
@@ -182,121 +174,111 @@ h3 {
                 <input type="text" id="CVC" name="CVC" size="4" maxlength="4">
                 <label for="expiry">Expiration Date:</label>
                 <input type="text" id="expiry" name="expiry" size="4" maxlength="4">
-                <br><br></fieldset>
+                <br>
             </form>
             </div>
 
-            <div class="cbox" style="background-color: #72936e;">
+            <div class="cbox" style="background-color: #dbdbdb;">
                 <h2>Covid Health Declaration</h2>
 				<form style="font-family: courier;">
 				<fieldset>
 				<p>I. Are you experiencing or did you have any of the following in the last 14 days?</p>
 				<ol><p>
-					a. Fever<br><br>
+					a. Fever<br>
 						<input type="radio" name="ans1" value="yes">
 						<label for="yes">Yes</label>
 						<input type="radio" name="ans1" value="no">
 						<label for="no">No</label>
-					<br><br><br>
+					<br>
 					
-					b. Cough and/or Colds<br><br>
+					b. Cough and/or Colds<br>
 						<input type="radio" name="ans2" value="yes">
 						<label for="yes">Yes</label>
 						<input type="radio" name="ans2" value="no">
 						<label for="no">No</label>
-					<br><br><br>
+					<br>
 					
-					c. Body pains<br><br>
+					c. Body pains<br>
 						<input type="radio" name="ans3" value="yes">
 						<label for="yes">Yes</label>
 						<input type="radio" name="ans3" value="no">
 						<label for="no">No</label>
-					<br><br><br>
+					<br>
 					
-					d. Sore Throat<br><br>
+					d. Sore Throat<br>
 						<input type="radio" name="ans4" value="yes">
 						<label for="yes">Yes</label>
 						<input type="radio" name="ans4" value="no">
 						<label for="no">No</label>
-					<br><br><br>
+					<br>
 					
-					e. Fatigue/Tiredness<br><br>
+					e. Fatigue/Tiredness<br>
 						<input type="radio" name="ans5" value="yes">
 						<label for="yes">Yes</label>
 						<input type="radio" name="ans5" value="no">
 						<label for="no">No</label>
-					<br><br><br>
+					<br>
 					
-					f. Headache<br><br>
+					f. Headache<br>
 						<input type="radio" name="ans6" value="yes">
 						<label for="yes">Yes</label>
 						<input type="radio" name="ans6" value="no">
 						<label for="no">No</label>
-					<br><br><br>
+					<br>
 					
-					g. Diarrhea<br><br>
+					g. Diarrhea<br>
 						<input type="radio" name="ans7" value="yes">
 						<label for="yes">Yes</label>
 						<input type="radio" name="ans7" value="no">
 						<label for="no">No</label>
-					<br><br><br>
+					<br>
 					
-					h. Loss of taste or smell<br><br>
+					h. Loss of taste or smell<br>
 						<input type="radio" name="ans8" value="yes">
 						<label for="yes">Yes</label>
 						<input type="radio" name="ans8" value="no">
 						<label for="no">No</label>
-					<br><br><br>
+					<br>
 					
-					i. Difficulty of breathing<br><br>
+					i. Difficulty of breathing<br>
 						<input type="radio" name="ans9" value="yes">
 						<label for="yes">Yes</label>
 						<input type="radio" name="ans9" value="no">
 						<label for="no">No</label>
-					</p><br><br>
+					</p><br>
 				</ol>
 				
-                <br><br>
 				
-                <hr>
-                <br><br>
                 <p>II. Have you had face-to-face contact with a probable or confirmed COVID-19 case within
                     1 meter and for more than 15 minutes for the past 14 days?
-                    <br><br>
+                    <br>
                     <input type="radio" name="ans10" value="yes">
                     <label for="yes">Yes</label>
                     <input type="radio" name="ans10" value="no">
                     <label for="no">No</label>
                     </p>
-                    <br><br>
-                    <hr>
-                    <br><br>
+                    <br>
                 <p>III. Have you provided direct care for a patient with probable or confirmed COVID-19 case
                     without using proper "Personal Protective Equipment (PPE)" for the past 14 days?
-                    <br><br
+                    <br>
                     <input type="radio" name="ans11" value="yes">
                     <label for="yes">Yes</label>
                     <input type="radio" name="ans11" value="no">
                     <label for="no">No</label></p>
-                    <br><br>
-                    <hr>
-                    <br><br>
+                    <br>
                     <p>IV. Have you traveled outside the Philippines in the last 14 days?
-                        <br><br>
+                        <br>
                         <input type="radio" name="ans12" value="yes">
                         <label for="yes">Yes</label>
                         <input type="radio" name="ans12" value="no">
                         <label for="no">No</label></p>
-                    <br><br>
-                    <hr>
-                    <br><br>
+                    <br>
                     <p>V. Have you traveled outside the current city/municipality where you reside?
-                        <br><br>
+                        <br>
                         <input type="radio" name="ans13" value="yes">
                         <label for="yes">Yes</label>
                         <input type="radio" name="ans13" value="no">
                         <label for="no">No</label></p></p>
-						<br><br>
 						<label for="ans13" >If yes, specify which city/municipality you went to:
 						</label>
 						<input type="text" id="yes13" name="13" size="20" maxlength="30">
